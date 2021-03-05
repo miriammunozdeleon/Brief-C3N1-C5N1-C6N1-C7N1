@@ -1,0 +1,31 @@
+CREATE DATABASE
+insert into (copiie pasted)
+USE boutique;
+3 SELECT * FROM products;
+4 SELECT Name FROM products;
+5 SELECT Name ,price FROM products;
+6 SELECT Name,price FROM products 
+WHERE price <=200;
+7 SELECT Name,price FROM products WHERE price <120 AND price >60;
+8 SELECT Name , price*100 as'price in cent' FROM products;
+9 SELECT AVG (price) FROM products;
+10 SELECT COUNT(*) FROM products where price>= 180;
+11 SELECT Name,price FROM products WHERE price>=180 ORDER BY price DESC, Name;
+12 SELECT * FROM manufacturers INNER JOIN products ON manufacturers.Code=products.Manufacturer;
+13 SELECT manufacturers.name, price,products.Name FROM manufacturers INNER JOIN products  ON manufacturers.Code=products.Manufacturer;
+14 SELECT manufacturers.Code, AVG(price) FROM manufacturers INNER JOIN products ON manufacturers.Code=products.Manufacturer GROUP BY manufacturers.Name;
+15 SELECT manufacturers.Name, AVG(price) FROM manufacturers INNER JOIN products  ON manufacturers.Code=products.Manufacturer
+GROUP BY manufacturers.Name;
+
+
+    SELECT - extracts data from a database
+    UPDATE - updates data in a database
+    DELETE - deletes data from a database
+    INSERT INTO - inserts new data into a database
+    CREATE DATABASE - creates a new database
+    ALTER DATABASE - modifies a database
+    CREATE TABLE - creates a new table
+    ALTER TABLE - modifies a table
+    DROP TABLE - deletes a table
+    CREATE INDEX - creates an index (search key)
+    DROP INDEX - deletes an index
